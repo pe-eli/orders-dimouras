@@ -163,6 +163,7 @@ export default function GerenciarPedidos() {
                 </div>
               </header>
 
+              <p>dimouras.com.br/acompanhar/{pedido.id}</p>
               <div className="order-section">
                 <h4 className="section-title">Itens</h4>
                 <div className="items-box">
