@@ -1,0 +1,242 @@
+/* Geral */
+.orders-page {
+  background: #f4f6f8;
+  min-height: 100vh;
+  padding: 28px;
+  font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  box-sizing: border-box;
+}
+
+/* Topo */
+.orders-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.back-link {
+  background: transparent;
+  border: none;
+  color: #2b6cb0;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 6px;
+}
+
+.orders-title {
+  font-size: 1.9rem;
+  margin: 0;
+}
+
+/* Abas */
+.orders-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0 22px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(16,24,40,0.02);
+  font-size: 0.9rem;
+  color: black;
+}
+
+.tab--active {
+  background: #1f6feb;
+  color: black;
+  box-shadow: 0 6px 18px rgba(31,110,235,0.12);
+}
+
+.tab-count {
+  background: rgba(0,0,0,0.06);
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.tab--active .tab-count {
+  background: rgba(255,255,255,0.18);
+}
+
+/* Lista de pedidos */
+.orders-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+/* Card */
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.06);
+  padding: 16px;
+  border: 1px solid rgba(16,24,40,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Header do card */
+.order-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.order-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-id {
+  font-weight: 700;
+  display: block;
+}
+
+.order-date {
+  font-size: 0.86rem;
+  color: #666;
+}
+
+/* direita do header */
+.order-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.order-total {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Badge de status */
+.badge {
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.badge--pending { background: #fff7ed; color: #b45309; border: 1px solid rgba(180,83,9,0.06); }
+.badge--preparing { background: #fff; color: #065f46; border: 1px solid rgba(6,95,70,0.06); background: #f0fdf4; color: #065f46; }
+.badge--delivering { background: #eff6ff; color: #1e3a8a; border: 1px solid rgba(30,58,138,0.06); }
+.badge--delivered { background: #ecfdf5; color: #065f46; border: 1px solid rgba(6,95,70,0.06); }
+.badge--canceled { background: #fff1f2; color: #9f1239; border: 1px solid rgba(159,18,57,0.06); }
+
+/* Seção de itens */
+.order-section { display: block; }
+
+.section-title {
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* caixa de itens */
+.items-box {
+  background: #f8fafc;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item-row {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  gap: 12px;
+  border-bottom: 1px dashed rgba(0,0,0,0.04);
+}
+
+.item-row:last-child { border-bottom: none; }
+
+.item-left { display:flex; align-items:center; gap:10px; }
+.item-qtd { font-weight:700; min-width:26px; display:inline-block; }
+.item-name { color:#333; }
+
+.item-price { font-weight:600; }
+
+/* cálculo pequenos */
+.calc-line {
+  display:flex;
+  justify-content: space-between;
+  color: #444;
+  font-size: 0.92rem;
+  margin-top: 6px;
+}
+
+/* entrega / pagamento */
+.order-flex {
+  display:flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.delivery-name { font-weight:700; margin: 4px 0; }
+.delivery-line { font-size: 0.92rem; color: #555; margin: 2px 0; }
+
+/* Ações */
+.order-actions {
+  display:flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-top: 6px;
+}
+
+.btn {
+  background: #fff;
+  border: 1px solid rgba(16,24,40,0.06);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn--primary {
+  background: #1f6feb;
+  color: #fff;
+  border: none;
+}
+
+.btn--danger {
+  background: #fff;
+  color: #9f1239;
+  border: 1px solid rgba(159,18,57,0.08);
+}
+
+/* vazio */
+.empty {
+  color: #666;
+  padding: 20px;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+/* responsivo */
+@media (min-width: 900px) {
+  .orders-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
