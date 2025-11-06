@@ -128,7 +128,6 @@ export default function GerenciarPedidos() {
   return (
     <div className="orders-page">
       <div className="orders-top">
-        <button className="back-link">← Voltar ao Cardápio</button>
         <h1 className="orders-title">Gerenciar Pedidos</h1>
       </div>
 
